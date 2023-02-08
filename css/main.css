@@ -1,0 +1,188 @@
+:root {
+  --dark: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.main-btn:hover {
+  color: var(--yellow-color);
+}
+
+/* start navbar */
+.navbar {
+  background-color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus {
+  color: var(--green-color);
+}
+.navbar .search {
+  border-left: 1px solid var(--green-color);
+}
+.navbar .search svg {
+  color: var(--green-color);
+}
+.navbar .navbar-toggler {
+  color: #fff;
+  font-size: 25px;
+  border-color: #fff;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+  border-color: var(--green-color);
+}
+a.btn {
+  text-decoration: none;
+}
+/* end navbar */
+
+/* start landing */
+.landing {
+  background-color: var(--dark);
+  min-height: calc(100vh - 72px);
+}
+/* start features */
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 3px;
+  background-color: var(--green-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -1rem;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon-holder {
+  height: 200px;
+}
+.number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+.icon {
+  font-size: 4rem;
+  color: var(--green-color);
+}
+
+.features .feat h4 {
+  color: var(--yellow-color);
+}
+/* work */
+.our-work {
+  background-color: var(--section-color);
+}
+.shuffle a {
+  text-decoration: none;
+}
+.shuffle a:not(:first-of-type) {
+  text-decoration: none;
+  color: #000;
+  margin-left: 1.5rem;
+}
+.shuffle a:not(:first-of-type):hover {
+  color: var(--red-color);
+}
+.row .box {
+  padding: 5px;
+  overflow: hidden;
+}
+.row .box::before {
+  content: attr(data-work);
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: var(--green-color);
+  opacity: 0.7;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: calc(-100% + 5px);
+  top: 5px;
+  transition: 0.3s;
+}
+.row .box:hover::before {
+  left: 5px;
+}
+/* Stuff Section */
+.stuff .first {
+  max-width: 500px;
+}
+
+/* Team Section */
+.team {
+  background-color: var(--section-color);
+}
+.team h2 {
+  color: var(--yellow-color);
+}
+.team .name {
+  background-color: var(--green-color);
+  color: #fff;
+}
+/* project */
+.project {
+  background-color: var(--dark);
+}
+/* subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+}
+.subscribe span {
+  color: var(--dark);
+}
+.subscribe input {
+  caret-color: #fff;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe input::placeholder {
+  color: #fff;
+}
+.subscribe .btn {
+  background-color: var(--dark);
+  color: var(--yellow-color);
+}
+/* footer */
+.footer {
+  background-color: var(--dark);
+}
+.by span {
+  color: var(--green-color);
+}
+.at span {
+  color: var(--yellow-color);
+}
+.footer ul a {
+  text-decoration: none;
+}
